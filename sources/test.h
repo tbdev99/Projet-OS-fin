@@ -39,7 +39,7 @@ int option,init,nbBits;
 						printf("Entrer l'adresse de l'alloation à supprimer\n");
 						scanf("%p",&p);
 						pointeur = rechercherAllocation(p);
-						printf("%d",myfree(pointeur));
+						printf("%d libérés \n",myfree(pointeur));
 						break;
 					case 4 :
 						afficherAllocation();
@@ -85,7 +85,7 @@ void menuLigneCommande(int argc,char **argv){
 				printf("Entrer l'adresse de l'alloation à supprimer\n");
 				scanf("%p",&p);
 				pointeur = rechercherAllocation(p);
-				printf("%d",myfree(pointeur));
+				printf("%d libérés \n",myfree(pointeur));
 			}
 			if(strcmp(argv[i],"afficherAllocation")==0){
 				afficherAllocation();
@@ -128,7 +128,7 @@ void modebatch(){
 				printf("Entrer l'adresse de l'alloation à supprimer\n");
 				scanf("%p",&p);
 				pointeur = rechercherAllocation(p);
-				printf("%d",myfree(pointeur));
+				printf("%d libérés \n",myfree(pointeur));
 			}
 			if(strcmp(ligne,"afficherAllocation\n")==0){
 				afficherAllocation();
